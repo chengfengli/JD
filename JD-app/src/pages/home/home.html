@@ -1,9 +1,42 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>首页</ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content>
-  首页打發士大夫
+    <ion-slides pager>
+        <ion-slide style="background-color: green">
+            <img src="../../assets/imgs/slide03.jpg">
+        </ion-slide>
+        <ion-slide style="background-color: blue">
+            <img src="../../assets/imgs/slide02.png">
+        </ion-slide>
+        <ion-slide style="background-color: red">
+            <img src="../../assets/imgs/slide03.jpg">
+        </ion-slide>
+    </ion-slides>
+
+    <!-- 精品推荐 -->
+    <div class="type">精品推荐</div>
+    <ion-scroll class="porduct" scrollX="true">
+        <ul [ngStyle]="{'width':porducts_width}">
+            <li *ngFor="let item of porducts">
+                <img [src]="item.img">
+                <p>{{item.name}}</p>
+            </li>
+        </ul>
+    </ion-scroll>
+
+    <!-- 猜你喜欢 -->
+    <div class="type">猜你喜欢</div>
+    <ul class="like">
+        <li *ngFor="let item of porducts">
+            <img [src]="item.img">
+            <p>{{item.name}}</p>
+            <div class="price">
+                <span class="now-price">￥100.00</span>
+            </div>
+        </li>
+    </ul>
 </ion-content>

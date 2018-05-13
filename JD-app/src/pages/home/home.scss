@@ -1,3 +1,71 @@
 page-home {
+    ion-slides{
+        height: auto;
+        .swiper-slide{
+            font-size: 0;
+        }
+        .swiper-pagination-bullet-active{
+            background-color: #FFF;
+        }
+    }
+    .type{
+        padding: 5px 10px;
+        font-size: 14px;
+        margin-top: 10px;
+        color: rgb(90, 88, 88);
+        font-weight: 600;
+    }
+    .type:before{
+        content: "";
+        display: inline;
+        border-left: 3px solid #f53d3d;
+        margin-right: 5px;
+    }
+    li{
+        display: inline-block;
+    }
+    //精品推荐
+    .porduct{
+        height: 83px;
+        ul{
+            list-style: none;
+            margin-left: 15px;
+        }
+        li{
+            margin-right: 15px;
+            img{
+                width: 60px;
+            }
+            p{
+                text-align: center;
+                font-size: 12px;   
+                width: 60px;
+                height: 18px; 
+            }
+        }
+        
+    }
 
+    //猜你喜欢
+    .like{
+        text-align: center;
+        li{
+            margin: 0 10px 30px 10px;
+            width: 43%;
+            img{
+                width: 100%;
+            }
+            p,.price{
+                text-align: left;
+            }
+            p{
+                font-size: 12px;
+            }
+            .price{
+                color: #f53d3d;
+                margin-top: 5px;
+                font-weight: 500;
+            }
+        }
+    }
 }
