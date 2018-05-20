@@ -1,3 +1,36 @@
 page-contact {
-
+    .user-photo{
+        background-color: #FA6352;
+        padding: 20px 0;
+        .user-img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 20px auto;
+            
+        }
+        .user-btn-box{
+            text-align: center;
+            span{
+                margin: 0 10px 10px 10px;
+                font-size: 14px;
+                color: #fff;
+            }
+        }
+    }
+    .menu-list.list-ios{
+        .item-block .item-inner{
+            border-bottom: 0;
+        }
+        .item-ios{
+            border-bottom: 0.55px solid #c8c7cc;
+        }
+        .item > ion-icon, .item-inner > ion-icon{
+            min-height: auto;
+        }
+        ion-item-divider{
+            min-height: auto;
+        }
+    }
 }

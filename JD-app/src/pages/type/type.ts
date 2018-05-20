@@ -17,7 +17,7 @@ export class TypePage {
             this.types.push({typeName:'分类'+(i+1),typeId:(i+1)});
         }
         for(let i=0;i<10;i++){
-            this.recList.push({name:'商品'+(i+1),img:'../../assets/imgs/0'+i+'.jpg'});
+            this.recList.push({name:'商品'+(i+1),img:'./assets/imgs/0'+i+'.jpg'});
         }
     }
 

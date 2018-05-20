@@ -5,5 +5,29 @@
 </ion-header>
 
 <ion-content>
-    购物车
+    <dl *ngFor="let item of cartList">
+        <dt class="cart_img">
+            <div class="cart_check"><ion-checkbox color="danger"></ion-checkbox></div>
+            <div class="cart_ico"><img src="./assets/imgs/00.jpg"></div>
+        </dt>
+        <dd>
+            <div class="title">这是商品的描述信息这是商品的描述信息这是商品的描述信息这是商品的描述信息这是商品的描述信息这是商品的描述信息</div>
+            <div class="price-count">
+                <div class="price">100￥</div>
+                <div class="count">
+                    <div class="reduce"><ion-icon ios="ios-remove"></ion-icon></div>
+                    <input type="number" readonly min="0" value="0">
+                    <div class="plus"><ion-icon ios="ios-add"></ion-icon></div>
+                </div>
+            </div>
+        </dd>
+    </dl>
 </ion-content>
+<ion-footer no-border>
+  <ion-toolbar>
+    <div class="settlement">
+        <div class="total-price">合计：<span>300￥</span></div>
+        <div class="settlement-btn">结算</div>
+    </div>
+  </ion-toolbar>
+</ion-footer>

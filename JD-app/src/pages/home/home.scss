@@ -3,6 +3,9 @@ page-home {
         height: auto;
         .swiper-slide{
             font-size: 0;
+            img{
+                width: 100%;
+            }
         }
         .swiper-pagination-bullet-active{
             background-color: #FFF;

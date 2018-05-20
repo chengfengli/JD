@@ -11,7 +11,7 @@ export class HomePage {
 
     constructor(public navCtrl: NavController) {
         for(let i=0;i<10;i++){
-            this.porducts.push({name:'商品'+(i+1),img:'../../assets/imgs/0'+i+'.jpg'});
+            this.porducts.push({name:'商品'+(i+1),img:'./assets/imgs/0'+i+'.jpg'});
         }
         this.porducts_width = this.porducts.length*75+'px';
     }
