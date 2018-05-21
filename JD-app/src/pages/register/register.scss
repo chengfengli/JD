@@ -1,0 +1,22 @@
+page-register {
+    .telNo{
+        border: 1px solid #E3E3E3;
+        border-radius: 3px;
+        margin: 20px auto;
+        padding: 0 10px;
+        width: 90%;
+    }
+    .next,.help{
+        width: 90%;
+        margin: 20px auto;
+        
+    }
+    .help{
+        color: #979797;
+        margin-top: 15px;
+        span{
+            color: #508FFF;
+            text-decoration: underline;
+        }
+    }
+}

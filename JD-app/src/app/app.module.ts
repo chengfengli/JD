@@ -12,6 +12,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { CarPage } from '../pages/car/car';
 import { TypePage } from '../pages/type/type';
 import { LoginPage } from '../pages/login/login';
+import { RegisterPage } from '../pages/register/register';
+import { ValidateCodePage } from '../pages/validate-code/validate-code';
+import { RegisterPwdPage } from '../pages/register-pwd/register-pwd';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { LoginPage } from '../pages/login/login';
     TabsPage,
     CarPage,
     TypePage,
-    LoginPage
+    LoginPage,
+    RegisterPage,
+    ValidateCodePage,
+    RegisterPwdPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +46,10 @@ import { LoginPage } from '../pages/login/login';
     TabsPage,
     CarPage,
     TypePage,
-    LoginPage
+    LoginPage,
+    RegisterPage,
+    ValidateCodePage,
+    RegisterPwdPage
   ],
   providers: [
     StatusBar,
