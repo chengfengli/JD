@@ -15,6 +15,7 @@ import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 import { ValidateCodePage } from '../pages/validate-code/validate-code';
 import { RegisterPwdPage } from '../pages/register-pwd/register-pwd';
+import { SearchPage } from '../pages/search/search';
 
 @NgModule({
   declarations: [
@@ -27,13 +28,14 @@ import { RegisterPwdPage } from '../pages/register-pwd/register-pwd';
     LoginPage,
     RegisterPage,
     ValidateCodePage,
-    RegisterPwdPage
+    RegisterPwdPage,
+    SearchPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp,{
         tabsHideOnSubPages: 'true',
-        backButtonText: '返回',
+        backButtonText: '',
         iconMode: 'ios',
         mode: 'ios',
     })
@@ -49,7 +51,8 @@ import { RegisterPwdPage } from '../pages/register-pwd/register-pwd';
     LoginPage,
     RegisterPage,
     ValidateCodePage,
-    RegisterPwdPage
+    RegisterPwdPage,
+    SearchPage
   ],
   providers: [
     StatusBar,
