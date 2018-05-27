@@ -1,0 +1,18 @@
+
+<ion-header>
+    <ion-navbar>
+        <ion-title>手机快速注册</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div class="box">
+        <div class="tips">请设置登录密码：</div>
+        <ion-input block type="password" class="password" placeholder="请设置为6-20位字符"></ion-input>
+        <div class="tips">确认密码：</div>
+        <ion-input block type="password" class="password" placeholder="请再次输入密码"></ion-input>
+        <div class="remarke">密码有6-20位字母、数字 或半角符号组成，不能是10位以下纯数字/字母/半角符号，字母区分大小写</div>
+        <button ion-button block color="danger" class="next" (click)="submit()">完成</button>
+        <div class="help">遇到问题？您可以 <span>联系客服</span></div>
+    </div>
+</ion-content>

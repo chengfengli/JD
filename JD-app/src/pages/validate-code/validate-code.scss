@@ -1,0 +1,27 @@
+page-validate-code {
+    .box{
+        padding: 30px 20px;
+        .tips{
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .code{
+            margin: 0.4rem 0;
+            border: 1px solid #E3E3E3;
+            border-radius: 3px;
+            width: 90%;
+            padding: 0 8px;
+            input{
+                margin: 13px 8px 13px 0;
+            }
+        }
+        .help{
+            color: #979797;
+            margin-top: 15px;
+            span{
+                color: #508FFF;
+                text-decoration: underline;
+            }
+        }
+    }
+}

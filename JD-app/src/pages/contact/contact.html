@@ -1,11 +1,42 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      个人中心
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>个人中心</ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content>
-  个人中心
+    <div class="user-photo">
+        <div class="user-img"><img src="./assets/imgs/user.png"></div>
+        <div class="user-btn-box">
+            <span class="login-btn" [navPush]="login">登陆</span>
+            <span class="register-btn" [navPush]="register">注册</span>
+        </div>
+    </div>
+    <ion-list insert class="menu-list">
+        <ion-item-divider ></ion-item-divider>
+        <button ion-item>
+            <ion-icon name="ios-paper-outline" item-start></ion-icon>
+            <span>全部订单</span>
+        </button>
+        <button ion-item>
+            <ion-icon name="ios-card-outline" item-start></ion-icon>
+            <span> 待付款</span>
+        </button>
+        <button ion-item>
+            <ion-icon name="ios-subway-outline" item-start></ion-icon>
+            <span>待收货</span>
+        </button>
+
+        <ion-item-divider >
+        </ion-item-divider>
+        <button ion-item>
+            <ion-icon name="ios-star-outline" item-start></ion-icon>
+            <span>我的收藏</span>
+        </button>
+        <button ion-item>
+            <ion-icon name="ios-headset-outline" item-start></ion-icon>
+            在线客服
+        </button> 
+    </ion-list>
+    
 </ion-content>

@@ -1,0 +1,14 @@
+page-login {
+    ion-label[fixed]{
+        min-width: 55px;
+        flex: 0;
+    }
+    .label-ios + ion-input .text-input{
+        margin-left: 0;
+    }
+    .login{
+        margin: 0 auto;
+        width: 90%;
+    }
+    
+}

@@ -1,0 +1,22 @@
+
+<ion-header>
+    <ion-navbar>
+        <ion-title>手机快速注册</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div class="box">
+        <div class="tips">请输入17311111111收到的验证码：</div>
+        <div style="display: flex;margin-bottom: 20px;">
+            <div style="width: 60%;">
+                <ion-input block type="text" class="code" placeholder="请输入验证码"></ion-input>
+            </div>
+            <div style="flex: 1;">
+                <button ion-button block color="danger" class="next">重新发送(120)</button>
+            </div>
+        </div>
+        <button ion-button block color="danger" class="next" (click)="next()">下一步</button>
+        <div class="help">遇到问题？您可以 <span>联系客服</span></div>
+    </div>
+</ion-content>

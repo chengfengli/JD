@@ -1,3 +1,96 @@
 page-car {
+    dl{
+        display: flex;
+        width: 98%;
+        padding: 5px 0;
+        border-bottom: 1px solid #ddd;
+        .cart_img{
+            display: flex;
+            width: 130px;
+            padding-right: 10px;
+            .cart_check{
+                width: 21px;
+                line-height: 79px;
+                margin: 0 10px;
+            }
+            .cart_ico{
+                font-size: 0;
+                flex: 1;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        dd{
+            flex: 1;
+            position: relative;
+            .title{
+                height: 38px;
+                overflow: hidden;
+            }
+            .price-count{
+                display: flex;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                .count{
+                    width: 86px;
+                    display: flex;
+                    border-radius: 3px;
+                    overflow: hidden;
+                    input{
+                        width: 30px;
+                        text-align: center;
+                        border: 1px solid #ccc;
+                    }
+                    .reduce,.plus{
+                        background: #ccc;
+                        padding: 0 8px;
+                        ion-icon{
+                            line-height: 21px;
+                            font-weight: bold;
+                            font-size: 24px;
+                        }
+                    }
+                    
+                }
+                .price{
+                    flex: 1;
+                    color: #f53d3d;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .footer{
+        .toolbar-ios{
+            padding: 0;
+            min-height: auto;
+        }
+    }
+    .settlement{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        .total-price{
+            flex: 1;
+            line-height: 44px;
+            padding-left: 14px;
+            font-size: 16px;
+            span{
+                color: #f53d3d;
+                font-weight: bold;
+            }
+        }
+        .settlement-btn{
+            font-size: 18px;
+            background-color: #f53d3d;
+            color: #fff;
+            padding: 10px 14px;
+        }
+    }
 
+    
+    
+    
 }

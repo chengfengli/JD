@@ -1,0 +1,30 @@
+page-register-pwd {
+    .box{
+        padding: 30px 20px;
+        .tips{
+            font-size: 16px;
+            color: #666666;
+        }
+        .password{
+            margin: 1rem 0 2rem 0;
+            border: 1px solid #E3E3E3;
+            border-radius: 3px;
+            padding: 0 8px;
+            input{
+                margin: 13px 8px 13px 0;
+            }
+        }
+        .help{
+            margin-top: 15px;
+            color: #979797;
+            span{
+                color: #508FFF;
+                text-decoration: underline;
+            }
+        }
+        .remarke{
+            color: #A8A8A8;
+            margin-bottom: 20px;
+        }
+    }
+}
