@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-navbar>
+        <ion-segment color="danger" [(ngModel)]="p_info">
+            <ion-segment-button value="img">商品</ion-segment-button>
+            <ion-segment-button value="info">详情</ion-segment-button>
+            <ion-segment-button value="comment">评论</ion-segment-button>
+        </ion-segment>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div [ngSwitch]="p_info">
+        <div *ngSwitchCase="'img'">
+            商品
+        </div>
+
+        <div *ngSwitchCase="'info'">
+            详情
+        </div>
+        <div *ngSwitchCase="'comment'">
+            评论
+        </div>
+    </div>
+</ion-content>
+
+<ion-footer no-border>
+    <ion-toolbar>
+        <div class="settlement">
+            <div class="total-price">
+                <ion-icon ios="ios-cart" md="md-cart"></ion-icon>
+                <p>购物车</p>
+                <ion-badge color="danger">1</ion-badge>
+            </div>
+            <div class="settlement-btn add-car-btn">加入购物车</div>
+            <div class="settlement-btn">立即购买</div>
+        </div>
+    </ion-toolbar>
+</ion-footer>

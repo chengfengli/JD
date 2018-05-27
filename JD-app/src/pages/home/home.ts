@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { SearchPage } from '../search/search';
+import { PdetailsPage } from '../pdetails/pdetails';
 
 @Component({
   selector: 'page-home',
@@ -17,7 +18,13 @@ export class HomePage {
         this.porducts_width = this.porducts.length*75+'px';
     }
 
+    //跳转到搜索页面
     goSearch(){
         this.navCtrl.push(SearchPage)
+    }
+
+    //跳转到商品详情页面
+    pdetail(){
+        this.navCtrl.push(PdetailsPage);
     }
 }

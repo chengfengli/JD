@@ -1,0 +1,43 @@
+page-pdetails {
+
+    .footer{
+        .toolbar-ios{
+            padding: 0;
+            min-height: auto;
+        }
+    }
+    .settlement{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        .total-price{
+            width: 103px;
+            text-align: center;
+            padding-left: 14px;
+            color: rgb(66, 65, 65);
+            position: relative;
+            ion-icon{
+                font-size: 2.2em;
+            }
+            p{
+                font-size: 14px;
+            }
+            ion-badge{
+                position: absolute;
+                top: 2px;
+                right: 10px;
+            }
+        }
+        .settlement-btn{
+            flex: 1;
+            font-size: 18px;
+            background-color: #f53d3d;
+            color: #fff;
+            padding: 10px 14px;
+            text-align: center;
+        }
+        .add-car-btn{
+            background-color: orange;
+        }
+    }
+}

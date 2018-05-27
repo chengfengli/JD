@@ -16,6 +16,7 @@ import { RegisterPage } from '../pages/register/register';
 import { ValidateCodePage } from '../pages/validate-code/validate-code';
 import { RegisterPwdPage } from '../pages/register-pwd/register-pwd';
 import { SearchPage } from '../pages/search/search';
+import { PdetailsPage } from '../pages/pdetails/pdetails';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SearchPage } from '../pages/search/search';
     RegisterPage,
     ValidateCodePage,
     RegisterPwdPage,
-    SearchPage
+    SearchPage,
+    PdetailsPage
   ],
   imports: [
     BrowserModule,
@@ -52,7 +54,8 @@ import { SearchPage } from '../pages/search/search';
     RegisterPage,
     ValidateCodePage,
     RegisterPwdPage,
-    SearchPage
+    SearchPage,
+    PdetailsPage
   ],
   providers: [
     StatusBar,

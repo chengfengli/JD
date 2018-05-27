@@ -21,7 +21,7 @@
     <div class="type">精品推荐</div>
     <ion-scroll class="porduct" scrollX="true">
         <ul [ngStyle]="{'width':porducts_width}">
-            <li *ngFor="let item of porducts">
+            <li *ngFor="let item of porducts" (click)="pdetail()">
                 <img [src]="item.img">
                 <p>{{item.name}}</p>
             </li>
@@ -31,7 +31,7 @@
     <!-- 猜你喜欢 -->
     <div class="type">猜你喜欢</div>
     <ion-row class="like">
-        <ion-col col-6 *ngFor="let item of porducts">
+        <ion-col col-6 *ngFor="let item of porducts" (click)="pdetail()">
             <img [src]="item.img">
             <p>{{item.name}}</p>
             <div class="price">
