@@ -9,11 +9,43 @@
 </ion-header>
 
 <ion-content>
-    <div [ngSwitch]="p_info">
+    <div [ngSwitch]="p_info" class="p_info">
         <div *ngSwitchCase="'img'">
-            商品
+            <ion-slides pager>
+                <ion-slide style="background-color: green">
+                    <img src="./assets/imgs/slide03.jpg">
+                </ion-slide>
+                <ion-slide style="background-color: blue">
+                    <img src="./assets/imgs/slide02.png">
+                </ion-slide>
+                <ion-slide style="background-color: red">
+                    <img src="./assets/imgs/slide03.jpg">
+                </ion-slide>
+            </ion-slides>
+            <div padding>
+                <div class="introduce1">
+                    该报每周刊登一篇关于一个优秀运动员的简该报每周刊登一篇关于一个优秀运动员的简该报每周刊登一篇关于一个优秀运动员的简
+                </div>
+                <div class="introduce2">
+                    该报每周刊登一篇关于一个优秀运动员的简该报每周刊登一篇关于一个优秀运动员的简该报每周刊登一篇关于一个优秀运动员的简
+                </div>
+                <div class="price">
+                    <div>
+                        <span class="title">特价：</span><span class="tejia">￥214</span>
+                    </div>
+                    <div style="padding-top: 7px;">
+                        <span class="title">原价：</span><span class="yuanjia">￥300</span>
+                    </div>
+                </div>
+            </div>
+            <div style="border-top:10px solid #EFEFEF;" padding>
+                <span style="font-size: 16px;font-weight: 600;">颜色：</span>
+                <span class="color">白色</span>
+                <span class="color">红色</span>
+                <span class="color">蓝色</span>
+                <span class="color">黑色</span>
+            </div>
         </div>
-
         <div *ngSwitchCase="'info'">
             详情
         </div>
@@ -26,7 +58,7 @@
 <ion-footer no-border>
     <ion-toolbar>
         <div class="settlement">
-            <div class="total-price">
+            <div class="total-price" (click)="goCart()">
                 <ion-icon ios="ios-cart" md="md-cart"></ion-icon>
                 <p>购物车</p>
                 <ion-badge color="danger">1</ion-badge>

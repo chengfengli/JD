@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { CarPage } from '../car/car';
 
 /**
  * 商品详情
@@ -16,6 +17,11 @@ export class PdetailsPage {
 
     ionViewDidLoad() {
         console.log('ionViewDidLoad PdetailsPage');
+    }
+
+    // 跳转到购物车
+    goCart(){
+        this.navCtrl.push(CarPage)
     }
 
 }

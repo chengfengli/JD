@@ -1,4 +1,52 @@
 page-pdetails {
+    .p_info{
+        ion-slides{
+            height: auto;
+            .swiper-slide{
+                font-size: 0;
+                img{
+                    width: 100%;
+                }
+            }
+            .swiper-pagination-bullet-active{
+                background-color: #FFF;
+            }
+        }
+        .introduce1{
+            font-size: 16px;
+            color: #020202;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        .introduce2{
+            font-size: 14x;
+            color: #606060;
+        }
+        .price{
+            font-size: 14px;
+            display: flex;
+            div{
+                flex: 1;
+                .title{
+                    font-weight: 600;
+                }
+                .tejia{
+                    font-size: 20px;
+                    color: #f53d3d;
+                    font-weight: 600;
+                }
+                .yuanjia{
+                    text-decoration: line-through;
+                }
+            }
+        }
+        .color{
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 5px 10px;
+            margin: 0 5px;
+        }
+    }
 
     .footer{
         .toolbar-ios{
@@ -11,13 +59,12 @@ page-pdetails {
         height: 100%;
         display: flex;
         .total-price{
-            width: 103px;
+            width: 88px;
             text-align: center;
-            padding-left: 14px;
             color: rgb(66, 65, 65);
             position: relative;
             ion-icon{
-                font-size: 2.2em;
+                font-size: 24px;
             }
             p{
                 font-size: 14px;
