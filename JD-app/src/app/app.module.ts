@@ -18,6 +18,9 @@ import { RegisterPwdPage } from '../pages/register-pwd/register-pwd';
 import { SearchPage } from '../pages/search/search';
 import { PdetailsPage } from '../pages/pdetails/pdetails';
 
+import { HttpModule } from '@angular/http';
+import { HttpProvider } from '../providers/http/http';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -35,6 +38,7 @@ import { PdetailsPage } from '../pages/pdetails/pdetails';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp,{
         tabsHideOnSubPages: 'true',
         backButtonText: '',
@@ -60,7 +64,8 @@ import { PdetailsPage } from '../pages/pdetails/pdetails';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    HttpProvider
   ]
 })
 export class AppModule {}
